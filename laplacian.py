@@ -4,7 +4,7 @@ import pycuda.driver as cuda
 import time
 from pycuda.compiler import SourceModule
 
-
+# trying 
 degree_reciprocal_sqrt_mod = SourceModule("""
 __global__ void degree_reciprocal_sqrt_kernel(float *simMatrix, int *numRows, float *degreeReciprocalSqrtArray){
     // threadsPerBlock is arbitrary. Each thread computes a single row sum.
